@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/allact"
+    tools:context="com.hasnain.UpskillForFree.homeactivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/acme"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="What do you want to learn?"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/programminglang"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+
+                <TextView
+                    android:id="@+id/programming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawableRight="@drawable/arrows"
+                    android:drawableTint="@color/purple_500"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="Programming Languages"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/softwaredev"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/webd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="Software Development"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageView4"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/ds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="Data Science"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/machinelearning"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/ml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="Machine Learning"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/devops"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/devo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="DevOps"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="-220dp"
+        android:clickable="true"
+        android:src="@drawable/logoutlogo"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="-72dp"
+        android:layout_marginLeft="288dp"
+        android:fontFamily="@font/acme"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold">
+
+    </TextView>
+
+</LinearLayout>

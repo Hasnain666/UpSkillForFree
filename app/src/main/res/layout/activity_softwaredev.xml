@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/allact"
+    tools:context="com.hasnain.UpskillForFree.softwaredev">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/acme"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Choose a Development Skill of your choice"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frontend"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+
+                <TextView
+                    android:id="@+id/fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawableRight="@drawable/arrows"
+                    android:drawableTint="@color/purple_500"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="FrontEnd Development"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/backend"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/be"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="BackEnd Development"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fullstack"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/fs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="FullStack Development"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mobiledev"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/ml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:drawableTint="@color/purple_500"
+                    android:drawableRight="@drawable/arrows"
+                    android:fontFamily="@font/acme"
+                    android:padding="10dp"
+                    android:text="Mobile Development"
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>
