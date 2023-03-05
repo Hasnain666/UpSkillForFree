@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupChat">
         <activity
+            android:name=".cplusplus"
+            android:exported="false" />
+        <activity
             android:name="com.hasnain.UpskillForFree.frontend"
             android:exported="false" />
         <activity
