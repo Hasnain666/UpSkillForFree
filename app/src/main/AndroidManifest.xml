@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupChat">
         <activity
+            android:name=".JavaScript"
+            android:exported="false" />
+        <activity
+            android:name=".java"
+            android:exported="false" />
+        <activity
+            android:name=".python"
+            android:exported="false" />
+        <activity
             android:name=".cplusplus"
             android:exported="false" />
         <activity
