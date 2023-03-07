@@ -50,5 +50,11 @@ public class programminglang extends AppCompatActivity {
                 startActivity(new Intent(programminglang.this,com.example.groupchat.JavaScript.class));
             }
         });
+        goLang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(programminglang.this,com.example.groupchat.goLang.class));
+            }
+        });
     }
 }
