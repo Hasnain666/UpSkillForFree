@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/allact"
     android:orientation="vertical"
-    tools:context="com.hasnain.UpskillForFree.frontend">
+    android:background="@drawable/allact"
+    tools:context=".AndroDev">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:fontFamily="@font/acme"
         android:padding="10dp"
-        android:text="Learn FrontEnd Development"
+        android:text="Learn Android Development"
         android:textColor="@color/black"
         android:textSize="28sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/frontEndRV"
+        android:id="@+id/androDevRV"
         />
 
 </LinearLayout>

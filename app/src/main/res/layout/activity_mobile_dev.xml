@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/allact"
+    tools:context=".MobileDev">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/acme"
+        android:padding="10dp"
+        android:text="Learn Native development or Cross Platform"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/androDev"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="10dp">
+
+
+        <TextView
+            android:id="@+id/road"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/acme"
+            android:padding="10dp"
+            android:text="Android Development"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/iosDev"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="10dp">
+
+
+        <TextView
+            android:id="@+id/yt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/acme"
+            android:padding="10dp"
+            android:text="IOS Development"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cpmd"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+
+            <TextView
+                android:id="@+id/cpmdtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/acme"
+                android:padding="10dp"
+                android:text="Cross Platform Mobile Development"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+
+</LinearLayout>

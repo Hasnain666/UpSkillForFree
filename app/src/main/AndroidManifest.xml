@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupChat">
         <activity
+            android:name=".iosDev"
+            android:exported="false" />
+        <activity
+            android:name=".AndroDev"
+            android:exported="false" />
+        <activity
+            android:name=".MobileDev"
+            android:exported="false" />
+        <activity
+            android:name=".BackEndDev"
+            android:exported="false" />
+        <activity
             android:name=".goLang"
             android:exported="false" />
         <activity

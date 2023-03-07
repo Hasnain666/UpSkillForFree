@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class softwaredev extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private CardView frontend, backend,fullstack,mobiledev;
+    private CardView frontend, backend,mobiledev;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +24,24 @@ public class softwaredev extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         frontend = findViewById(R.id.frontend);
         backend = findViewById(R.id.backend);
-        fullstack = findViewById(R.id.fullstack);
         mobiledev = findViewById(R.id.mobiledev);
         frontend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(softwaredev.this,com.hasnain.UpskillForFree.frontend.class));
+            }
+        });
+        backend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(softwaredev.this,com.example.groupchat.BackEndDev.class));
+            }
+        });
+        mobiledev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(softwaredev.this,com.example.groupchat.MobileDev.class));
+
             }
         });
 

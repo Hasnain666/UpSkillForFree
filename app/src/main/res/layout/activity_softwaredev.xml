@@ -83,35 +83,6 @@
                     android:textColor="@color/purple_500"
                     android:textSize="20sp" />
             </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fullstack"
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                android:background="@color/white"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:id="@+id/fs"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_margin="20dp"
-                    android:drawableTint="@color/purple_500"
-                    android:drawableRight="@drawable/arrows"
-                    android:fontFamily="@font/acme"
-                    android:padding="10dp"
-                    android:text="FullStack Development"
-                    android:textColor="@color/purple_500"
-                    android:textSize="20sp" />
-
-
-
-            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/mobiledev"
                 android:layout_width="10dp"
