@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupChat">
         <activity
+            android:name=".cpmd"
+            android:exported="false" />
+        <activity
             android:name=".iosDev"
             android:exported="false" />
         <activity

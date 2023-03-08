@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 public class MobileDev extends AppCompatActivity {
-    private CardView android,ios;
+    private CardView android,ios,cpmd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MobileDev extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         android = findViewById(R.id.androDev);
         ios = findViewById(R.id.iosDev);
+        cpmd = findViewById(R.id.cpmd);
         android.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +30,12 @@ public class MobileDev extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MobileDev.this,com.example.groupchat.iosDev.class));
+            }
+        });
+        cpmd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MobileDev.this,com.example.groupchat.cpmd.class));
             }
         });
 

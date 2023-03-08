@@ -1,4 +1,4 @@
-package com.hasnain.UpskillForFree;
+package com.example.groupchat;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,38 +7,36 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.example.groupchat.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.hasnain.UpskillForFree.adapters.DevOpsAdapter;
-import com.hasnain.UpskillForFree.adapters.MachineLearningAdapter;
-import com.hasnain.UpskillForFree.models.DevOpsResponse;
-import com.hasnain.UpskillForFree.models.MachineLearningResponse;
+import com.hasnain.UpskillForFree.adapters.AndroDevAdapter;
+import com.hasnain.UpskillForFree.adapters.cpmdAdapter;
+import com.hasnain.UpskillForFree.models.AndroidDevResponse;
+import com.hasnain.UpskillForFree.models.CpmdResponse;
 
-public class devops extends AppCompatActivity {
+public class cpmd extends AppCompatActivity {
     private RecyclerView recyclerView;
-    DevOpsAdapter adapter;
+    cpmdAdapter adapter;
     DatabaseReference mbase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devops);
+        setContentView(R.layout.activity_cpmd);
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getCourseList();
-
     }
     public void getCourseList() {
-        mbase = FirebaseDatabase.getInstance("https://groupchat-42e40-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Courses").child("DevOps");
-        recyclerView = findViewById(R.id.devOpsRV);
+        mbase = FirebaseDatabase.getInstance("https://groupchat-42e40-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Courses").child("Cpmd");
+        recyclerView = findViewById(R.id.cpmdRV);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        FirebaseRecyclerOptions<DevOpsResponse> options
-                = new FirebaseRecyclerOptions.Builder<DevOpsResponse>()
-                .setQuery(mbase, DevOpsResponse.class)
+        FirebaseRecyclerOptions<CpmdResponse> options
+                = new FirebaseRecyclerOptions.Builder<CpmdResponse>()
+                .setQuery(mbase, CpmdResponse.class)
                 .build();
-        adapter = new DevOpsAdapter(options,this);
+        adapter = new cpmdAdapter(options,this);
         recyclerView.setAdapter(adapter);
 
     }
